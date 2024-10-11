@@ -1,0 +1,18 @@
+input_data = open('input.txt', 'r') 
+data = input_data.readlines()
+a = str(data[0])
+b = str(data[1])
+a = a.split()
+b = b.split()
+a1 = int(a[0])
+a2 = int(a[1])
+a3 = int(a[2])
+b1 = int(b[0])
+b2 = int(b[1])
+b3 = int(b[2])
+
+
+output_data = open('output.txt', 'w')
+output_data.write()
+input_data.close()
+output_data.close()
