@@ -12,16 +12,11 @@ x2 = int(b[0])
 y2 = int(b[1])
 r2 = int(b[2])
 
-
-if sqrt((x1 - x2)**2 + (y1 - y2)**2) <= r1 + r2 :
+l = (x2 - x1)**2 + (y2 - y1)**2
+if (r1 -r2)**2 <= l <= (r1 +r2)**2:
     output_data = open('output.txt', 'w')
     output_data.write('YES')
-elif sqrt((x1-x2)**2 + (y1-y2)**2) + r1 >= r2:
-    output_data = open('output.txt', 'w')
-    output_data.write('NO')
-elif sqrt((x1-x2)**2 + (y1-y2)**2) + r2 >= r1:
-    output_data = open('output.txt', 'w')
-    output_data.write('NO')
+
 
 else:
     output_data = open('output.txt', 'w')
